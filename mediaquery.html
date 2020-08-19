@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent{
+     
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .child2{
+      width: 50%;
+      padding: 0;
+      text-align: center;
+
+    }
+    .child2 img{
+      width: 450px;
+    }
+    h1{
+      margin: 50px 0;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .child1{
+      width: 50%;
+      padding: 0 5%;
+      box-sizing:border-box;
+      text-align: justify;
+      line-height: 1.7;
+    }
+    @media(max-width: 768px){
+      h1{
+        color: violet;
+      }
+      .parent{
+        display: block;
+      }
+      .child2{
+        width: 100%;
+      }
+      .child1{
+        width: 100%;
+      }
+      .child2{
+        width: 100%;
+        height: auto;
+      }
+
+    }
+    @media screen and (min-width: 1024px){
+      .parent div{
+        color: red;
+        word-spacing: 10px;
+      }
+    }
+    @media(max-width: 468px){
+      .child2 img{
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    }
+    @media screen and (max-width: 1023px){
+      h1{
+        text-transform: uppercase;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Media query (responsive website)</h1>
+  <div class="parent">
+    <br>
+    <div class="child">
+      This is an example for media query responsive wbsite.This is an example for media query responsive wbsite.
+      This is an example for media query responsive wbsite.This is an example for media query responsive wbsite.
+      This is an example for media query responsive wbsite.This is an example for media query responsive wbsite.
+      This is an example for media query responsive wbsite.This is an example for media query responsive wbsite.
+      This is an example for media query responsive wbsite.This is an example for media query responsive wbsite.
+      This is an example for media query responsive wbsite.This is an example for media query responsive wbsite.
+      This is an example for media query responsive wbsite.This is an example for media query responsive wbsite.
+    </div>
+    <div class="child2"><img src="balloons.jpg"></div>
+  </div>
+</body>
+</html>
